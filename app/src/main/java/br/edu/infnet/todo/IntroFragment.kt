@@ -28,17 +28,17 @@ class IntroFragment : Fragment() {
 
 
 
-       start_button.setOnClickListener {
-           val bundle = Bundle()
-           bundle.putString("name",userName.text.toString())
-           findNavController().navigate(R.id.action_introFragment_to_mainActivity2, bundle)
+        start_button.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("name",userName.text.toString())
+            findNavController().navigate(R.id.action_introFragment_to_mainActivity2, bundle)
 
-           }
+        }
 
 
-       about_button.setOnClickListener {
+        about_button.setOnClickListener {
 
-             findNavController().navigate(R.id.action_introFragment_to_aboutFragment)
+            findNavController().navigate(R.id.action_introFragment_to_aboutFragment)
         }
 
 
